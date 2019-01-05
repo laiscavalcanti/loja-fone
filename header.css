@@ -1,0 +1,20 @@
+ .top-header{  
+    background-color: #e24647;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+h1, a{
+    color: #ffffff;
+    display: inline;
+}
+h1{ 
+    flex-grow: 1;
+    font: 40px ArialMT Arial, Helvetica, sans-serif;  
+}
+a{
+    padding: 2px 10px 0px 10px;
+    text-decoration: none;
+    font: 21px SegoeUI;
+    float: right;
+}
