@@ -1,0 +1,32 @@
+.header-store{  
+    background-color: #e24647;
+    color: #fff;
+    overflow: hidden;
+    margin-bottom: 138px;
+    padding-left: 60px; 
+
+}
+.title {
+    color: #ffffff;
+    text-transform: uppercase;
+    float: left;
+    font: 40px ArialMT Arial, Helvetica, sans-serif;  
+    cursor: pointer;
+}
+ .navigation{
+    float: right;
+    font: 21px SegoeUI, ArialMT Arial, Helvetica, sans-serif;
+}
+ .item{
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-right: 60px;
+}
+ .action{
+    text-decoration: none;
+    color: #fff;
+    position: relative;  
+}
+.last{
+    margin-right: 0px;
+}
