@@ -19,3 +19,11 @@
     width: 218px;
     line-height: 56px;
 }
+.button-store > button,
+.button-store> a{
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    text-decoration: inherit;
+}

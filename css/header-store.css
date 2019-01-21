@@ -2,29 +2,31 @@
     background-color: #e24647;
     color: #fff;
     overflow: hidden;
+    margin-bottom: 20px;
     
 }
-.title {
+.header-store .title {
     color: #ffffff;
     text-transform: uppercase;
     float: left;
     font: 40px ArialMT Arial, Helvetica, sans-serif;  
     cursor: pointer;
+    text-transform: uppercase;
 }
- .navigation{
+.header-store .navigation{
     float: right;
     font: 21px SegoeUI, ArialMT Arial, Helvetica, sans-serif;
 }
- .item{
+.header-store .item{
     display: inline-block;
     padding-bottom: 8px;
     margin-right: 60px;
 }
- .action{
+.header-store .action{
     text-decoration: none;
     color: #fff;
     position: relative;  
 }
-.last{
+.header-store .-last{
     margin-right: 0px;
 }
