@@ -1,0 +1,6 @@
+.wrap-button{
+    position: absolute;
+    left: 60%;
+    transform: translateY( calc(-100% + 98px));
+    margin-left: 6px;
+}

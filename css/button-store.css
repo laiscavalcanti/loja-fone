@@ -12,12 +12,28 @@
     height: 60px;
     line-height: 60px;
     margin-right: 0;
+    cursor: pointer;
+
+    transition:  all 300ms linear;
+}
+.button-store:hover,
+.button-store:focus{
+    background-color: #fff;
+    color:#252c41;
+}
+.button-store:active {
+    transform: scale(0.9);
 }
 .button-store.-second{
     background-color: transparent;
     border: 1px solid #fff;
     width: 218px;
     line-height: 56px;
+}
+.button-store.-second:hover,
+.button-store.-second:focus{
+    background-color: #fff;
+    color: #e24647;
 }
 .button-store > button,
 .button-store> a{
