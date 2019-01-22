@@ -17,6 +17,17 @@
     float: right;
     font: 21px SegoeUI, ArialMT Arial, Helvetica, sans-serif;
 }
+.header-store [type="search"]{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: inherit;
+    font-family: Arial, "Roboto", sans-serif;
+    font-size: 20px;
+    padding: 8px;
+    width: 358px;
+    margin-right: 65px;
+}
 .header-store .item{
     display: inline-block;
     padding-bottom: 8px;
