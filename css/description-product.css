@@ -16,6 +16,19 @@
     left: -47px;
     top: 6px;
 }
+.description-product > .item.-star{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.description-product .icon{
+    transition: transform 100ms linear;
+}
+.description-product >.item.-star + .item{
+    margin-left: 7px;
+}
+.description-product .icon:hover{
+    transform: scale(1.2);
+}
 .description-product >.item .-info{
     width: 200px;
     text-align: right;

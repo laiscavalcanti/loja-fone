@@ -20,7 +20,6 @@
     font: 21px SegoeUI, ArialMT Arial, Helvetica, sans-serif;
 }
 .header-store [type="search"]{
-    display: inline-block;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #fff;
@@ -38,10 +37,23 @@
     margin-right: 60px;
 }
 .header-store .action{
+    box-sizing: border-box;
+    display: inline-block;
     text-decoration: none;
     color: #fff;
-    position: relative;  
+    margin-right: 64px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid transparent;
+
+}
+.header-store .action:hover{
+   
 }
 .header-store .-last{
     margin-right: 0px;
+}
+.header-store .border{
+    height: 1px;   
+    width: 100%;
+    background-color: #fff;
 }
