@@ -13,7 +13,7 @@
     line-height: 60px;
     margin-right: 0;
     cursor: pointer;
-
+ 
     transition:  all 300ms linear;
 }
 .button-store:hover,
