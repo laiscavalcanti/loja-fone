@@ -31,6 +31,9 @@
     margin-right: 65px;
     vertical-align: bottom;
 }
+.header-store [type="search"]::placeholder{
+  color: inherit; 
+}
 .header-store .item{
     display: inline-block;
     padding-bottom: 8px;
@@ -61,13 +64,13 @@
   .header-store .action:hover::after {
     transform: scale(1);
 }
-@media (max-width: 1920px) {
+@media (max-width: 1310px) {
   .header-store {
     padding-right: 60px; 
   }
 }
 
-@media (max-width: 1292px) {
+@media (max-width: 1235px) {
 
   .header-store {
     margin-bottom: 70px;
@@ -86,7 +89,6 @@
 }
 
 @media (max-width: 966px) {
-
   .header-store {
     padding-left: 30px;
     padding-right: 30px; 
@@ -115,7 +117,6 @@
     margin-right: 8px;
   }
 }
-
 @media (max-width: 350px) {
   .header-store .item.-menu{
     display: block;

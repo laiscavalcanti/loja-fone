@@ -21,3 +21,11 @@
         width: 100%;
     }
 }
+@media (max-width: 560px){
+    .photo-product{
+        height: auto;
+    }
+    .photo-product >.photo{
+        width: 98%;
+    }
+}
