@@ -88,10 +88,16 @@
   }
 }
 
-@media (max-width: 966px) {
+@media (max-width: 955px) {
   .header-store {
     padding-left: 30px;
     padding-right: 30px; 
+  }
+  .header-store [type="search"]{
+    position: absolute;
+    top: 0; left: 0;
+    background-color: #fff;
+    color: #000;
   }
 }
 
