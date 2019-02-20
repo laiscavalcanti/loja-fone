@@ -16,7 +16,7 @@ $stars.forEach(($star, itemSelected) => {
         star.classList.add("-active");
       } else {
         star.classList.remove("-active");
-      }s
+      }
     });
   }
 });

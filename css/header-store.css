@@ -96,8 +96,14 @@
   .header-store [type="search"]{
     position: absolute;
     top: 0; left: 0;
+    transform: translateX(-88%);
     background-color: #fff;
     color: #000;
+
+    transition: transform 200ms linear;
+  }
+  .header-store .-active[type="search"]{
+    transform: translateX(0);
   }
 }
 
