@@ -13,11 +13,10 @@
     <link rel="stylesheet" href="css/header-store.css"/>
     <link rel="stylesheet" href="css/container-store.css"/>
     <link rel="stylesheet" href="css/button-store.css"/>
+    <link rel="stylesheet" href="css/input-search.css"/>
     <link rel="stylesheet" href="css/wrap-product.css"/>
-    <link rel="stylesheet" href="css/wrap-button.css"/>
-     
+    <link rel="stylesheet" href="css/wrap-button.css"/> 
     <link rel="stylesheet" href="css/photo-product.css"/>
-
     <link rel="stylesheet" href="css/description-product.css"/>
 
 </head>
@@ -26,7 +25,10 @@
     <header class="header-store"> 
             <h1 class="title" href="#">Logo</h1>
         <nav class="navigation" >
-            <input class="-active" type="search" placeholder="Busca">
+            <form class="input-search ">
+                <input class="content -active" type="search" placeholder="Busca"><!--
+               --><input class="icon" type="image" src="img/search.png" width="30px" height="30px" >
+            </form>
             <ul id="menu" class="list">
                 <li class="item">
                     <a class="action" href="#">produtos<div class="border"></div></a>
@@ -98,7 +100,7 @@
 
     <script src="js/description-product.js"></script>  
     <script src="js/home.js"></script>
-    <script src="js/header-store.js"></script>
+    <script src="js/input-search.js"></script>
 </body>
 
 </html>

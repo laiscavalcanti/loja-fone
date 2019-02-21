@@ -19,21 +19,7 @@
     float: right;
     font: 21px SegoeUI, ArialMT Arial, Helvetica, sans-serif;
 }
-.header-store [type="search"]{
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #fff;
-    color: inherit;
-    font-family: Arial, "Roboto", sans-serif;
-    font-size: 20px;
-    padding: 8px;
-    width: 358px;
-    margin-right: 65px;
-    vertical-align: bottom;
-}
-.header-store [type="search"]::placeholder{
-  color: inherit; 
-}
+
 .header-store .item{
     display: inline-block;
     padding-bottom: 8px;
@@ -92,18 +78,6 @@
   .header-store {
     padding-left: 30px;
     padding-right: 30px; 
-  }
-  .header-store [type="search"]{
-    position: absolute;
-    top: 0; left: 0;
-    transform: translateX(-88%);
-    background-color: #fff;
-    color: #000;
-
-    transition: transform 200ms linear;
-  }
-  .header-store .-active[type="search"]{
-    transform: translateX(0);
   }
 }
 
