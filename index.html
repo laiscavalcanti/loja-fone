@@ -27,17 +27,19 @@
         <nav class="navigation" >
             <form class="input-search -active">
                 <input class="content -active" type="search" placeholder="Busca"><!--
-               --><input class="icon" type="image" src="img/search.png" width="30px" height="30px" >
+               --><input type="image" class="icon -open -active" src="img/search.png" ><!--
+               --><input type="image" class="icon -close" src="img/close.png">
             </form>
             <ul id="menu" class="list">
+                <li><a class="item -menu" href="#" >Menu</a></li>
                 <li class="item">
-                    <a class="action" href="#">produtos<div class="border"></div></a>
+                    <a class="action" href="#">produtos</a>
                 </li>
                 <li class="item">
-                    <a class="action" href="#">serviços <div class="border"></div></a>
+                    <a class="action" href="#">serviços </a>
                 </li>
-                <li class="item">
-                    <a class="action -last" href="#">carrinhos (10) <div class="border"></div></a>
+                <li class="item -last">
+                    <a class="action " href="#">carrinhos (10) </a>
                 </li>
             </ul>
         </nav>

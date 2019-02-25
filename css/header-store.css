@@ -1,41 +1,42 @@
 .header-store{  
-    background-color: #e24647;
     color: #fff;
     overflow: hidden;
-    margin-bottom: 139px;
+    margin-bottom: 138px;
     padding-left: 60px;
-    
 }
-.header-store .title {
-    color: #ffffff;
+.header-store > .title {
     text-transform: uppercase;
     float: left;
-    font: 40px ArialMT Arial, Helvetica, sans-serif;
-    cursor: pointer;
-    text-transform: uppercase;
+    font-size: 40px;
+    font-family: ArialMT Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
-.header-store .navigation{
+.header-store> .navigation{
+    font-size: 21px;
     float: right;
-    font: 21px SegoeUI, ArialMT Arial, Helvetica, sans-serif;
+    font-family: "SegoeUI", "Roboto", sans-serif;
 }
-
+.header-store .menu{
+  display: none;
+}
 .header-store .item{
-    display: inline-block;
-    padding-bottom: 8px;
-    margin-right: 60px;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-right: 60px;
+}
+.header-store .item.-menu{
+  display: none;
+}
+.header-store .item.-last{
+  margin-right: 0;
 }
 .header-store .action{
-    box-sizing: border-box;
-    display: inline-block;
     text-decoration: none;
     color: #fff;
-    margin-right: 64px;
-    padding-bottom: 8px;
     border-bottom: 1px solid transparent;
 }
-.header-store .action::after {
-    content: '';
+.header-store .action:after {
+    content: "";
     width: 100%;
     height: 1px;
     background-color: #fff;
@@ -47,7 +48,7 @@
     transform-origin: center left;
     transition: transform 200ms linear;
   }
-  .header-store .action:hover::after {
+  .header-store .action:hover:after {
     transform: scale(1);
 }
 @media (max-width: 1310px) {
@@ -55,25 +56,20 @@
     padding-right: 60px; 
   }
 }
-
 @media (max-width: 1235px) {
-
   .header-store {
     margin-bottom: 70px;
   }
-
   .header-store > .title {
     float: none;
     text-align: center;
     margin-bottom: 20px;
   }
-
   .header-store > .navigation {
     float: none;
     text-align: center;
   }
 }
-
 @media (max-width: 955px) {
   .header-store {
     padding-left: 30px;
@@ -92,18 +88,21 @@
     margin-right: 15px;
   }
 }
-
 @media (max-width: 375px) {
   .header-store {
     padding-left: 16px;
     padding-right: 16px;
   }
-
-  .header-store .action {
+  .header-store .item {
     margin-right: 8px;
   }
 }
 @media (max-width: 335px) {
+  .header-store .item.-menu{
+    display: block;
+    background-image: url(../img/menu.png);
+    background-repeat: no-repeat;
+  }
   .header-store  .action{
     display: none;
   }
