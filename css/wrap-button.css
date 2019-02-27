@@ -1,15 +1,14 @@
 .wrap-button{
     position: absolute;
     left: 60%;
+    margin-left: 6px;
     transform: translateY( calc(-100% + 98px));
 }
-@media (max-width: 1310px){
+@media (max-width: 1292px){
     .wrap-button{
         position: static;
         width: 100%;
-        min-width: 655px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left:0 auto;
         text-align: center;
         transform: none; 
 

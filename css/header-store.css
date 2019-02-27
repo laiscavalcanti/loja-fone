@@ -8,16 +8,13 @@
     text-transform: uppercase;
     float: left;
     font-size: 40px;
-    font-family: ArialMT Arial, Helvetica, sans-serif;
+    font-family:  Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
 .header-store> .navigation{
     font-size: 21px;
     float: right;
     font-family: "SegoeUI", "Roboto", sans-serif;
-}
-.header-store .menu{
-  display: none;
 }
 .header-store .item{
   display: inline-block;
@@ -30,13 +27,16 @@
 .header-store .item.-last{
   margin-right: 0;
 }
-.header-store .action{
-    text-decoration: none;
-    color: #fff;
-    border-bottom: 1px solid transparent;
+.header-store .list{
+  display: inline-block;
 }
-.header-store .action:after {
-    content: "";
+.header-store .action{
+   position: relative;
+   color: inherit;
+   text-decoration: none;
+}
+.header-store .action::after {
+    content: '';
     width: 100%;
     height: 1px;
     background-color: #fff;
@@ -48,15 +48,15 @@
     transform-origin: center left;
     transition: transform 200ms linear;
   }
-  .header-store .action:hover:after {
+  .header-store .action:hover::after {
     transform: scale(1);
 }
-@media (max-width: 1310px) {
+@media (max-width: 1920px) {
   .header-store {
     padding-right: 60px; 
   }
 }
-@media (max-width: 1235px) {
+@media (max-width: 1292px) {
   .header-store {
     margin-bottom: 70px;
   }
@@ -70,7 +70,7 @@
     text-align: center;
   }
 }
-@media (max-width: 955px) {
+@media (max-width: 966px) {
   .header-store {
     padding-left: 30px;
     padding-right: 30px; 
@@ -88,7 +88,7 @@
     margin-right: 15px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   .header-store {
     padding-left: 16px;
     padding-right: 16px;
@@ -97,11 +97,21 @@
     margin-right: 8px;
   }
 }
-@media (max-width: 335px) {
+@media (max-width: 350px) {
   .header-store .item.-menu{
     display: block;
-    background-image: url(../img/menu.png);
-    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 40px;
+    height: 41px;
+    background: url(../img/menu.png) #fff no-repeat center;
+    text-indent: -9999px;
+    margin: 0;
+    position: absolute;
+    top: 0; left: 0;
+    cursor: pointer;
+
+    transform: translateX(-100%);
+    transition: transform 400ms 100ms linear;
   }
   .header-store  .action{
     display: none;

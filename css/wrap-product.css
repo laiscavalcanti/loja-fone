@@ -1,11 +1,11 @@
 .wrap-product{
     display: inline-block;
-    width: 554px;
+    width: 454px;
     vertical-align: middle;
     position: relative;
 }
 
-@media(max-width: 1310px){
+@media(max-width: 1292px){
     .wrap-product{
        width: 100%; 
     }
