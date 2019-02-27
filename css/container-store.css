@@ -1,12 +1,14 @@
 .container-store{
     width: 90%;
+    box-sizing: border-box;
+    box-shadow: 0 0 39px 0 rgba(50, 50, 50, 0.36);
     max-width: 1330px;
     position: absolute;
-    padding: 55px 60px 165px 0px;
-    left: 50%;
-    top: 50%;
     background-color: #e24647;
-    transform: translateX(-50%) translateY(-50%);  
+    padding: 55px 60px 165px 0px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 @media (max-width: 1470px), (max-height: 952px) {
     .container-store {
@@ -16,9 +18,9 @@
         max-width: 100%;
     }
 }
-@media (max-width: 1310px) {
+@media (max-width: 1292px) {
     .container-store {
-        padding-right: 0px;
+        padding-right: 0;
     }
 }
 
