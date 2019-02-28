@@ -1,5 +1,6 @@
 const $heart = document.querySelector(".-heart");
 const $stars = document.querySelectorAll(".star");
+const positionLast = $stars.length - 1;
 
 $heart.addEventListener("click", handleClick);
 
@@ -7,19 +8,44 @@ function handleClick() {
   this.classList.toggle("-active");
 }
 
-$stars.forEach(($star, itemSelected) => {
-  $star.addEventListener("click", starSelected);
+$stars.forEach(function($star, key) {
+  if (key == 0) {
+    $star.addEventListener("click", firstStar);
+  }
 
-  function starSelected() {
-    $stars.forEach((star, index) => {
-      if (itemSelected >= index) {
-        star.classList.add("-active");
-      } else {
-        star.classList.remove("-active");
-      }
+  if (key == positionLast) {
+    $star.addEventListener("click", lastStar);
+  }
+
+  if (key > 0 && key < positionLast) {
+    $star.addEventListener("click", function() {
+      middleStar(key);
     });
   }
 });
+
+function firstStar() {
+  $stars.forEach(function($star) {
+    $star.classList.remove("-active");
+  });
+  this.classList.add("-active");
+}
+
+function lastStar() {
+  $stars.forEach(function($star) {
+    $star.classList.add("-active");
+  });
+}
+
+function middleStar(index) {
+  $stars.forEach(function($star, key) {
+    $star.classList.remove("-active");
+
+    if (key <= index) {
+      $star.classList.add("-active");
+    }
+  });
+}
 
 
 

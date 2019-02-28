@@ -16,6 +16,9 @@
     float: right;
     font-family: "SegoeUI", "Roboto", sans-serif;
 }
+.header-store .list{
+  display: inline-block;
+}
 .header-store .item{
   display: inline-block;
   padding-bottom: 8px;
@@ -27,9 +30,7 @@
 .header-store .item.-last{
   margin-right: 0;
 }
-.header-store .list{
-  display: inline-block;
-}
+
 .header-store .action{
    position: relative;
    color: inherit;
@@ -114,7 +115,7 @@
     transition: transform 400ms 100ms linear;
   }
   .header-store .list {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.95);
     color: #000;
     position: absolute;
     top: 0;
